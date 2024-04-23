@@ -94,26 +94,61 @@
           <h1>Sign up for our newsletter!</h1>
           <p>stuff</p>
         </div>
-        <div class="col-4">
-          <img src="#" alt="...">
+        <div class="col-5">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputFirstName" class="form-label">First Name</label>
+              <input type="email" class="form-control" id="inputFirstName">
+            </div>
+            <div class="col-md-6">
+              <label for="inputLastName" class="form-label">Last Name</label>
+              <input type="password" class="form-control" id="inputLastName">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPhone" class="form-label">Phone Number</label>
+              <input type="password" class="form-control" id="inputPhone">
+            </div>
+            <div class="col-12">
+              <label for="inputComment" class="form-label">Comments</label>
+              <input type="text" class="form-control" id="inputComment">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I agree to receive monthly emails from Hearth...
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I agree to receive weekly text notifications from Hearth...
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
         </div>
       </div>
 
-      <div class="row fixed-bottom"> <!--div for footer-->
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/">Instagram</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.youtube.com/">Youtube</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Email us!</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Give us a call!</a>
-          </li>
-        </ul>
+      <div class="row"> <!--div for footer-->
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="https://www.instagram.com/" class="nav-link px-2 text-body-secondary">Instagram</a></li>
+            <li class="nav-item"><a href="https://www.youtube.com/" class="nav-link px-2 text-body-secondary">Youtube</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Email us!</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2024 Hearth, Co</p>
+        </footer>
       </div> <!--close div for footer-->
 
     </div> <!--close container-->
