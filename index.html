@@ -22,8 +22,8 @@
   <body>
     <div class="container"> <!--website container-->
       
-      <div class="row"> <!--navbar div-->
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="row sticky-top"> <!--navbar div-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">hearth</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +32,9 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="index.html">home</a>
-                <a class="nav-link" href="plants.html">plants</a>
+                <a class="nav-link" href="explore.html">explore</a>
                 <a class="nav-link" href="trade.html">trade</a>
+                <!--potentially change trade to blog/news? Blog/News: Regular updates, articles, and tips on plant care, new research findings, and community stories.-->
                 <a class="nav-link" href="plant_101.html">plant 101</a>
                 <a class="nav-link" href="my_plants.html">my plants</a>
               </div> <!--close navbar links-->
@@ -48,6 +49,73 @@
         <p>heart + earth = hearth</p>
         <p>learn everything about taking care of your plants and connect with other plant lovers</p>
       </div> <!--close header-->
+
+      <div class="row justify-content-evenly"> <!--about us div-->
+        <div class="col-4"> <!--left div-->
+          <h1>About Us</h1>
+          <p>stuff</p>
+        </div> <!--close left div-->
+        <div class="col-4"> <!--right column-->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--carousel div-->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div> <!--close carousel inner-->
+          </div> <!--close carousel div-->
+        </div> <!--close right column-->
+      </div> <!--close about us div-->
+
+      <div class="row text-center"> <!--features heading-->
+        <div class="col">
+          <h1>Features</h1>
+        </div>
+      </div> <!--close features heading-->
+      <div class="row justify-content-evenly"> <!--features button div-->
+        <div class="col-2">
+          <a class="btn btn-outline-success" href="explore.html" role="button">Explore Plants</a>
+        </div>
+        <div class="col-2">
+          <a class="btn btn-outline-success" href="plant_101.html" role="button">Plant Care Tips</a>
+        </div>
+        <div class="col-2">
+          <a class="btn btn-outline-success" href="my_plants.html" role="button">Health Tracker</a>
+        </div>
+      </div> <!--close features button div-->
+
+      <div class="row justify-content-evenly">
+        <div class="col-4">
+          <h1>Sign up for our newsletter!</h1>
+          <p>stuff</p>
+        </div>
+        <div class="col-4">
+          <img src="#" alt="...">
+        </div>
+      </div>
+
+      <div class="row fixed-bottom"> <!--div for footer-->
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/">Youtube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Email us!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Give us a call!</a>
+          </li>
+        </ul>
+      </div> <!--close div for footer-->
+
     </div> <!--close container-->
 
 <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
