@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.plant-filter {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.nav-link {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+}
