@@ -28,47 +28,52 @@
       <div class="row sticky-top"> <!--navbar div-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">hearth</a>
+            <a class="navbar-brand nav-font" href="index.html">hearth</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="index.html">home</a>
-                <a class="nav-link active" aria-current="page" href="explore.html">explore</a>
-                <a class="nav-link" href="news.html">news</a>
-                <a class="nav-link" href="plant_101.html">plant 101</a>
-                <a class="nav-link" href="my_plants.html">my plants</a>
+                <a class="nav-link nav-font" href="index.html">home</a>
+                <a class="nav-link active nav-font" aria-current="page" href="explore.html">explore</a>
+                <a class="nav-link nav-font" href="news.html">news</a>
+                <a class="nav-link nav-font" href="plant_101.html">plant 101</a>
+                <a class="nav-link nav-font" href="my_plants.html">my plants</a>
               </div>
             </div>
           </div>
         </nav>
       </div> <!--close navbar div-->
       
-      <div class="row sticky-top"> <!--filter bar-->
+      <div class="row fixed-top filter-bar"> <!--filter bar-->
         <div> <!--first part of filter-->
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="plant-filter" href="#OutdoorPlants">Outdoor Plants</a>
+              <a class="nav-link plant-filter rounded-pill bs-dark-border-subtle" href="#OutdoorPlants">Outdoor Plants</a>
             </li>
             <li class="nav-item">
-              <a class="plant-filter" href="#IndoorPlants">Indoor Plants</a>
+              <a class="nav-link plant-filter rounded-pill" href="#IndoorPlants">Indoor Plants</a>
             </li>
             <li class="nav-item">
-              <a class="plant-filter" href="#PetFriendly">Pet-Friendly</a>
+              <a class="nav-link plant-filter rounded-pill" href="#PetFriendly">Pet-Friendly</a>
             </li>
             <li class="nav-item">
-              <a class="plant-filter" href="#EasyToCare">Easy-to-Care</a>
+              <a class="nav-link plant-filter rounded-pill" href="#EasyToCare">Easy-to-Care</a>
             </li>
           </ul>
         </div> <!--close first half of filter-->
         <div class="justify-content-end"> <!--a to z filter option-->
-          <button class="nav-link justify-content-md-end">A-Z</button>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <button class="nav-link plant-filter rounded-pill">A-Z</button>
+            </li>
+          </ul>
         </div> <!--close a to z filter option-->
       </div> <!--close filter bar-->
 
       <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"> <!--content div-->
-        <h1 class="col" id="OutdoorPlants">Outdoor Plants</h1>
+        <div class="section-padding"> <!--div for outdoor-->
+          <h1 class="col" id="OutdoorPlants">Outdoor Plants</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
@@ -95,7 +100,9 @@
               </div>
             </div>
           </div>
-        <h1 class="col" id="IndoorPlants">Indoor Plants</h1>
+        </div> <!--close div for outdoor-->
+        <div class="section-padding"> <!--div for indoor-->
+          <h1 class="col" id="IndoorPlants">Indoor Plants</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
@@ -122,7 +129,9 @@
               </div>
             </div>
           </div>
-        <h1 class="col" id="PetFriendly">Pet-Friendly</h1>
+        </div> <!--close div for indoor-->
+        <div class="section-padding"> <!--div for pet-->
+          <h1 class="col" id="PetFriendly">Pet-Friendly</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
@@ -149,7 +158,9 @@
               </div>
             </div>
           </div>
-        <h1 class="col" id="EasytoCare">Easy-to-Care</h1>
+        </div> <!--close div for pet-->
+        <div class="section-padding"> <!--div for easy-->
+          <h1 class="col" id="EasytoCare">Easy-to-Care</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
@@ -176,6 +187,7 @@
               </div>
             </div>
           </div>
+        </div>
 
           <!--add garden section if I have time-->
 

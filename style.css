@@ -1,3 +1,11 @@
+body {
+    background-color: #FFF3E0;
+}
+
+.section-padding {
+    padding: 75px 50px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Work Sans", sans-serif;
     font-weight: 800;
@@ -7,11 +15,64 @@ p {
     font-family: "Nunito Sans", sans-serif;
 }
 
-.plant-filter {
+.welcome {
     font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
 }
 
-.nav-link {
+.index-descriptor {
+    font-weight: 600;
+}
+
+.filter-bar {                      /*!!!!!how to make sticky/fixed under sticky navbar?????*/
+    margin-top: 75px;
+    background-color: #FFF3E0;
+}
+
+.plant-filter {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: white;
+    color: black;
+    border: 2px black;
+}
+
+.plant-filter:hover {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px white;
+}
+
+.plant-filter:active {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px white;
+}
+
+.nav-font {
     font-family: "Work Sans", sans-serif;
     font-weight: 800;
+}
+
+.news-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.water-padding {
+    padding-top: 75px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.calendar-padding {
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.calendar-card {
+    padding: 5px;
 }
