@@ -84,3 +84,63 @@ p {
 .card-title {
     color: white;
 }
+
+.features-div {
+    background-color: #FFD0D0;
+}
+
+.btn {
+    background-color: #61714d;
+    color: white;
+    border-color: #61714d;
+}
+
+.btn:hover {
+    background-color: #61714d;
+    color: white;
+    border-color: #61714d;
+}
+
+.btn:active {
+    background-color: #61714d;
+    color: white;
+    border-color: #61714d;
+}
+
+.btn:link {
+    background-color: #61714d;
+    color: white;
+    border-color: #61714d;
+}
+
+.ftr-btn {
+    background-color: #FFF3E0;
+    color: #61714d;
+    border-color: #61714d;
+    border-width: medium;
+    font-weight: 600;
+}
+
+.ftr-btn:hover {
+    background-color: #61714d;
+    color: white;
+    border-color: #61714d;
+    border-width: medium;
+    font-weight: 600;
+}
+
+.ftr-btn:active {
+    background-color: #61714d;
+    color: white;
+    border-color: #61714d;
+    border-width: medium;
+    font-weight: 600;
+}
+
+.ftr-btn:link {
+    background-color: #61714d;
+    color: white;
+    border-color: #61714d;
+    border-width: medium;
+    font-weight: 600;
+}
