@@ -1,4 +1,4 @@
-body {
+.container-fluid {
     background-color: #FFF3E0;
 }
 
@@ -75,4 +75,12 @@ p {
 
 .calendar-card {
     padding: 5px;
+}
+
+.card-img-top {
+    filter: brightness(75%);
+}
+
+.card-title {
+    color: white;
 }
