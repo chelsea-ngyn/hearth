@@ -71,121 +71,345 @@
         </div> <!--close a to z filter option-->
       </div> <!--close filter bar-->
 
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"> <!--content div-->
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2 section-padding" tabindex="0"> <!--content div-->
+        
         <div class="section-padding"> <!--div for outdoor-->
           <h1 class="col" id="OutdoorPlants">Outdoor Plants</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
+            
             <div class="col">
-              <div class="card h-100">
-                <img src="images/Petunia-Outdoor.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#petuniaModal"> <!-- card trigger modal -->
+                <a><img src="images/Petunia-Outdoor.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
-                  <h2 class="card-title"><br><br><br><br><br><br>Petunia</h2> <!--How to algin text to bottom left????-->
+                  <h2 class="card-title">Petunia</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="petuniaModal" tabindex="-1" aria-labelledby="petuniaModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="petuniaModalLabel">Petunia</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Petunia-Outdoor.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/Caladium-Outdoor.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#caladiumModal"> <!-- card trigger modal -->
+                <a><img src="images/Caladium-Outdoor.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Caladium</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="caladiumModal" tabindex="-1" aria-labelledby="caladiumModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="caladiumModalLabel">Caladium</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Caladium-Outdoor.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/Hostas-Outdoor.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#hostasModal"> <!-- card trigger modal -->
+                <a><img src="images/Hostas-Outdoor.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Hostas</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="hostasModal" tabindex="-1" aria-labelledby="hostasModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="hostasModalLabel">Hostas</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Hostas-Outdoor.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
           </div>
         </div> <!--close div for outdoor-->
+
         <div class="section-padding"> <!--div for indoor-->
           <h1 class="col" id="IndoorPlants">Indoor Plants</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/FiddleLeafFig-Indoor.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#fiddleModal"> <!-- card trigger modal -->
+                <a><img src="images/FiddleLeafFig-Indoor.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Fiddle Leaf Fig</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="fiddleModal" tabindex="-1" aria-labelledby="fiddleModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="fiddleModalLabel">Fiddle Leaf Fig</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/FiddleLeafFig-Indoor.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/Monstera-Indoor.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#monsteraModal"> <!-- card trigger modal -->
+                <a><img src="images/Monstera-Indoor.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Monstera</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="monsteraModal" tabindex="-1" aria-labelledby="monsteraModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="monsteraModalLabel">Monstera</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Monstera-Indoor.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/Pothos-Indoor.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#pothosModal"> <!-- card trigger modal -->
+                <a><img src="images/Pothos-Indoor.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Pothos</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="pothosModal" tabindex="-1" aria-labelledby="pothosModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="pothosModalLabel">Pothos</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Pothos-Indoor.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
           </div>
         </div> <!--close div for indoor-->
+
         <div class="section-padding"> <!--div for pet-->
           <h1 class="col" id="PetFriendly">Pet-Friendly</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/Orchid-Pet.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#orchidModal"> <!-- card trigger modal -->
+                <a><img src="images/Orchid-Pet.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Orchid</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="orchidModal" tabindex="-1" aria-labelledby="orchidModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="orchidModalLabel">Orchid</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Orchid-Pet.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/PileaPeperomioides-Pet.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#pileaModal"> <!-- card trigger modal -->
+                <a><img src="images/PileaPeperomioides-Pet.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Pilea Peperomioides</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="pileaModal" tabindex="-1" aria-labelledby="pileaModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="pileaModalLabel">Pilea Peperomioides</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/PileaPeperomioides-Pet.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/PrayerPlant-Pet.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#prayerModal"> <!-- card trigger modal -->
+                <a><img src="images/PrayerPlant-Pet.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Prayer Plant</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="prayerModal" tabindex="-1" aria-labelledby="prayerModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="prayerModalLabel">Prayer Plant</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/PrayerPlant-Pet.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
           </div>
         </div> <!--close div for pet-->
+        
         <div class="section-padding"> <!--div for easy-->
           <h1 class="col" id="EasytoCare">Easy-to-Care</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/ZZPlant-Easy.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#zzModal"> <!-- card trigger modal -->
+                <a><img src="images/ZZPlant-Easy.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">ZZ Plant</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="zzModal" tabindex="-1" aria-labelledby="zzModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="zzModalLabel">ZZ Plant</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/ZZPlant-Easy.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/SnakePlant-Easy.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#snakeModal"> <!-- card trigger modal -->
+                <a><img src="images/SnakePlant-Easy.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Snake Plant</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="snakeModal" tabindex="-1" aria-labelledby="snakeModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="snakeModalLabel">Snake Plant</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/SnakePlant-Easy.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
             <div class="col">
-              <div class="card h-100">
-                <img src="images/Aloe-Easy.jpg" class="card-img-top" alt="...">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#aloeModal"> <!-- card trigger modal -->
+                <a><img src="images/Aloe-Easy.jpg" class="card-img-top card-tint" alt="..."></a>
                 <div class="card-img-overlay">
                   <h2 class="card-title">Aloe</h2>
                 </div>
-              </div>
-            </div>
+              </div> <!--close card trigger modal-->
+              <div class="modal fade" id="aloeModal" tabindex="-1" aria-labelledby="aloeModalLabel" aria-hidden="true"> <!-- Modal -->
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="aloeModalLabel">Aloe</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/Aloe-Easy.jpg" class="card-img-top" alt="...">
+                      <p>stuff about petunias</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--close modal-->
+            </div> <!--close col-->
+
           </div>
         </div>
 
