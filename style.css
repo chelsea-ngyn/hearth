@@ -1,5 +1,5 @@
-.container-fluid {
-    background-color: #FFF3E0;
+header {
+    background-image: url(images/indexheader.jpg)
 }
 
 .section-padding {
@@ -86,7 +86,7 @@ p {
 }
 
 .features-div {
-    background-color: #FFD0D0;
+    background-color: #FFF3E0;
 }
 
 .btn {
