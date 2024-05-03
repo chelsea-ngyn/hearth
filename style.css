@@ -1,5 +1,9 @@
 header {
-    background-image: url(images/indexheader.jpg)
+    background-image: url(images/indexheader.jpg);
+}
+
+.news-header {
+    background-image: url(images/news-header.jpg);
 }
 
 .section-padding {
@@ -143,4 +147,8 @@ p {
     border-color: #61714d;
     border-width: medium;
     font-weight: 600;
+}
+
+.explore-padding {
+    padding: 50px 25px;
 }

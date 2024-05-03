@@ -25,50 +25,57 @@
   <body>
     
   <!--navbar-->
-  <header class="row">
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand nav-font" href="index.html">hearth</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link nav-font" href="index.html">home</a>
-            <a class="nav-link active nav-font" aria-current="page" href="explore.html">explore</a>
-            <a class="nav-link nav-font" href="news.html">news</a>
-            <a class="nav-link nav-font" href="plant_101.html">plant 101</a>
-            <a class="nav-link nav-font" href="my_plants.html">my plants</a>
-          </div> <!--close navbar links-->
-        </div> <!--close navbar collapse-->
-      </div> <!--close container-->
-    </nav>
-  </header>
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand nav-font" href="index.html">hearth</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link nav-font" href="index.html">home</a>
+          <a class="nav-link active nav-font" aria-current="page" href="explore.html">explore</a>
+          <a class="nav-link nav-font" href="news.html">news</a>
+          <a class="nav-link nav-font" href="plant_101.html">plant 101</a>
+          <a class="nav-link nav-font" href="my_plants.html">my plants</a>
+        </div> <!--close navbar links-->
+      </div> <!--close navbar collapse-->
+    </div> <!--close container-->
+  </nav>
   
 
   <div class="container">
     <!--sidebar-->
       <div class="row">
-        <div class="col-3 section-padding">
-          <div class="position-sticky" style="top: 2rem;">
+        <div class="col-2">
+          <div class="position-sticky" style="top: 6rem;">
             <div>
-              <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link" href="#OutdoorPlants">Outdoor Plants</a>
-                  <a class="nav-link" href="#IndoorPlants">Indoor Plants</a>
-                  <a class="nav-link" href="#PetFriendly">Pet-Friendly</a>
-                  <a class="nav-link" href="#EasytoCare">Easy-to-Care</a>
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item mb-1" href="#houseplants">
+                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    House Plants
+                  </button>
+                  <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#OutdoorPlants" class="nav-link d-inline-flex text-decoration-none rounded ms-3 my-1">Outdoor Plants</a></li>
+                      <li><a href="#IndoorPlants" class="nav-link d-inline-flex text-decoration-none rounded ms-3 my-1">Indoor Plants</a></li>
+                      <li><a href="#PetFriendly" class="nav-link d-inline-flex text-decoration-none rounded ms-3 my-1">Pet Friendly</a></li>
+                      <li><a href="#EasytoCare" class="nav-link d-inline-flex text-decoration-none rounded ms-3 my-1">Easy to Care</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#">A-Z</a>
-                </nav>
-              </nav>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
       <!--content-->
-        <div class="col-9">
-          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">  
-            <div id="OutdoorPlants" class="section-padding">
+        <div class="col-10">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0" id="houseplants">  
+            <div class="explore-padding" id="OutdoorPlants">
               <h1>Outdoor Plants</h1>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
@@ -87,7 +94,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/Petunia-Outdoor.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing petunias at home is a rewarding way to add long-lasting color to your garden or balcony, as these hardy flowers bloom profusely from spring until frost. They thrive in full sun and well-drained soil, making them perfect for hanging baskets, containers, or ground cover, where their cheerful blossoms can spill and cascade beautifully.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -112,7 +119,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/Caladium-Outdoor.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing caladiums at home offers a splendid splash of color with minimal effort, especially in shaded or partially shaded garden spots. These tropical tubers flourish in warm, moist soil and need protection from direct sunlight to keep their vivid leaves vibrant and healthy.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -137,7 +144,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/Hostas-Outdoor.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Hostas are an excellent choice for home gardens, especially in shaded areas where few other plants thrive. Their lush foliage, which comes in various shades of green, blue, and variegated patterns, adds a calming and textured backdrop to garden beds, making them both versatile and visually appealing.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -148,7 +155,7 @@
                 </div> <!--close col3-->
               </div> <!--close row-->
             </div> <!--close outdoor section-->
-            <div id="IndoorPlants" class="section-padding">
+            <div class="explore-padding" id="IndoorPlants">
               <h1>Indoor Plants</h1>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
@@ -167,7 +174,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/FiddleLeafFig-Indoor.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing a fiddle leaf fig at home can dramatically enhance your living space with its large, glossy, violin-shaped leaves that command attention. To thrive, this popular houseplant prefers bright, indirect light and consistent moisture, making it essential to establish a regular watering routine and ensure good drainage to promote healthy growth.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -192,7 +199,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/Monstera-Indoor.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing a monstera at home adds a touch of tropical elegance to your indoor space with its iconic, fenestrated leaves. Thriving in bright, indirect light and well-draining soil, this low-maintenance houseplant can quickly become a stunning focal point, adding lush greenery and a sense of jungle chic to any room.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -217,7 +224,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/Pothos-Indoor.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing pothos at home is a great way to add greenery to any space, as these versatile plants thrive in a variety of conditions. With their trailing vines and heart-shaped leaves, pothos are perfect for hanging baskets or placed on shelves, and they require little maintenance, making them an ideal choice for both beginner and experienced indoor gardeners.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -228,7 +235,7 @@
                 </div> <!--close col3-->
               </div> <!--close row-->
             </div> <!--close indoor section-->
-            <div id="PetFriendly" class="section-padding">
+            <div class="explore-padding" id="PetFriendly">
               <h1>Pet-Friendly</h1>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
@@ -247,7 +254,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/Orchid-Pet.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing orchids at home can be a rewarding experience, offering a touch of exotic beauty to your indoor space with their elegant blooms. To thrive, orchids require bright, indirect light and a well-draining potting mix, making them a stunning addition to any room with minimal maintenance.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -272,7 +279,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/PileaPeperomioides-Pet.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing pilea at home is a delightful way to add a touch of whimsy to your indoor garden with its unique, pancake-shaped leaves. Thriving in bright, indirect light and well-draining soil, pilea is an easy-to-care-for plant that adds a pop of green to any room.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -297,7 +304,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/PrayerPlant-Pet.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing a prayer plant at home is a wonderful way to introduce some vibrant foliage to your indoor space. With its striking patterned leaves that fold up at night, this tropical plant thrives in low to medium light conditions and adds a touch of exotic beauty to any room.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -308,7 +315,7 @@
                 </div> <!--close col3-->
               </div> <!--close row-->
             </div> <!--close pet section-->
-            <div id="EasytoCare" class="section-padding">
+            <div class="explore-padding" id="EasytoCare">
               <h1>Easy-to-Care</h1>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
@@ -327,7 +334,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/ZZPlant-Easy.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing a ZZ plant at home is an excellent choice for those looking for a low-maintenance and resilient houseplant. Thriving in low light conditions and requiring minimal watering, the ZZ plant's glossy, dark green leaves add a touch of elegance to any indoor space.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -352,7 +359,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/SnakePlant-Easy.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing a snake plant at home is perfect for busy plant lovers, as it thrives on neglect and can tolerate low light conditions. With its striking upright leaves and air-purifying qualities, the snake plant adds a touch of modern elegance to any indoor environment.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -377,7 +384,7 @@
                         </div>
                         <div class="modal-body">
                           <img src="images/Aloe-Easy.jpg" class="card-img-top" alt="...">
-                          <p>stuff about petunias</p>
+                          <p>Growing an aloe plant at home is not only aesthetically pleasing but also practical, as its gel-filled leaves can be used to soothe minor burns and skin irritations. Thriving in bright, indirect light and well-draining soil, aloe plants are low-maintenance and make a lovely addition to any sunny windowsill or indoor garden.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
